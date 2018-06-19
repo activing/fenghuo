@@ -1,0 +1,199 @@
+/*网页最顶部*/
+.head{
+	height: 35px;
+	line-height: 35px;
+	background-color: #F2F2F2;
+}
+.x-wrap{
+	height: 35px;
+	margin: 0 auto;
+	position: relative;
+}
+.h-left{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.h-left a{
+	color:#C1121D;
+	margin-left: 10px;
+}
+.h-left span{color: #6c6c6c;}
+.h-right{
+	position: relative;
+	margin-right: 10px;
+
+}
+.h-right dd{
+	float: left;
+}
+dl{
+	float: right;
+}
+/*清除浮动*/
+.h-right:after{
+	content: "";
+	clear:both;
+}
+dl:after{
+	content: "";
+	clear:both;
+}
+.h-right dd h3 a{
+	color: #6c6c6c;
+	display: inline-block;
+	height: 15px;
+	line-height: 15px;
+	padding: 9px 15px;
+}
+.h-right dd h3 a:hover{
+	color:#C1121D;
+	background-color:#EDEEF0;
+}
+.myFire ul{
+	width: 102px;
+	z-index: 2;
+	background-color:white;
+	box-shadow: 1px 0px 1px rgba(0, 0, 0, .1);
+	display: none;
+	position: relative;
+}
+.myFire ul li{
+	text-align: center;
+}
+.myFire ul li a{
+	color: #6c6c6c;
+}
+.myFire ul li:hover a{
+	color: #C1121D;
+}
+.myFire h3 a b{
+	background:url(../images/list.png) no-repeat;
+	background-size: auto auto;
+	color: #fff;
+	text-align: center;
+	font-size: 10px;
+	width: 15px;
+	height: 15px;
+	line-height: 15px;
+	position: absolute;
+	left: 0px;
+	display: block;
+}
+.myFire ul,.myPhone ul{
+	position: absolute;
+	z-index: 1;
+}
+.shopCar span{
+	color:#C1121D;
+}
+/*最右顶部图标*/
+.h-right dd h3 a i{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	overflow: hidden;
+	vertical-align: middle;
+	background:url(../images/cart-icon.png) no-repeat;
+} 
+.h-right dd h3 a .my-icon{
+	background-position: -244px -577px;
+	position: relative;
+	left: 0;
+	top: -1px;
+}
+.h-right dd h3 a:hover .my-icon{
+	background-position: -224px -577px;
+}
+.h-right dd h3 a .my-mobile{
+	background-position: -244px -603px;
+	position: relative;
+	left: 6px;
+	top: -2px;
+}
+.h-right dd h3 a .car{
+	background-position: -244px -637px;
+	position: relative;
+	left: 5px;
+	top: 0px;
+}
+.myPhone ul{
+	width: 111px;
+	height: 160px;
+	display: none;
+	box-shadow: 1px 0px 1px rgba(0, 0, 0, .1);
+}
+.myFire img{
+	border:0;
+}
+
+/*logo和搜索框的*/
+.com-header{
+	width: 100%;
+	min-height: 50px;
+	height: 93px;
+	padding-top: 7px;
+	position: relative;
+}
+.com-header .wrap{
+	width: 1200px;
+	height: 100%;
+	min-width:40%;
+	min-height: 50%;
+	margin:0 auto;
+	position: relative;
+}
+.wrap .logo{
+	width: 200px;
+	height: 80px;
+	position: absolute;
+	left: 6%;
+	top: 6px;
+}
+.search-box{
+	width: 440px;
+	position: absolute;
+	left:35%;
+	top: 20px;
+	
+}
+/*清除浮动*/
+.search-box form{
+	overflow: hidden;
+}
+.search-box form input{
+	/*去掉输入框的选中阴影*/
+	outline: none;
+	width: 330px;
+	height: 30px;
+	float:left;
+	border:2px solid #C1121D;
+}
+.search-box form button{
+	display: inline-block;
+	border:none;
+	width: 100px;
+	height: 34px;
+	background-color: #C1121D;
+	font-size: 19px;
+	color: #fff;
+	cursor: pointer;
+	outline: 0;
+}
+.hot-search{
+	position: absolute;
+	left: 35%;
+	bottom: 15px;
+}
+.hot-search span{
+	color: #6c6c6c;
+}
+.hot-search a{
+	display: inline-block;
+	color: #6c6c6c;
+}
+.hot-search a:not(:last-child){
+	padding: 0 12px;
+	border-right:1px solid #6c6c6c;
+}
+

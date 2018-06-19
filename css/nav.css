@@ -1,0 +1,139 @@
+nav{
+	width: 100%;
+	height: 39px;
+	background-color: #272727;
+}
+.nav-wrap{
+	width: 1200px;
+	margin:0 auto;
+	position: relative;
+}
+/*全部商品*/
+.allShop{
+	position: absolute;
+	width: 220px;
+	height: 39px;
+	overflow: hidden;
+	transition: all 0.5s;
+	z-index: 100;
+}
+.allShop:hover{
+	height: 407px;
+	
+}
+.allShop .main-shop{
+	width: 220px;
+	height: 39px;
+	line-height: 39px;
+	background-color:#c1121d;
+	text-align: center;
+	display: block;overflow: hidden;
+}
+.main-shop a{
+	color: #fff;
+	font-size: 14px;
+}
+/*全部商品下拉菜单*/
+.allShop .list-box{
+	width: 220px;
+	background-color:#272727;
+	height: 369px;
+}
+.list-box .list0 li{
+	position: relative;
+}
+.list-box .list0 li:hover{
+	cursor: pointer;
+	background:-webkit-linear-gradient(top,#333,#272727);
+	background:-moz-linear-gradient(top,#333,#272727);
+	background:-ms-linear-gradient(top,#333,#272727);
+	background:linear-gradient(top,#333,#272727);
+}
+.list-box .list0{
+	height: 641px;
+	
+}
+.list-box .list0 li a{
+	color: #fff;
+	font-family:"微软雅黑","宋体";
+}
+.list-box .list0 li p a{
+	font-size: 14px;
+}
+.list-box .list0 li p,.list-box .list0 h3{
+	width: 180px;
+	height: 100%;
+	padding: 5px 20px;
+}
+.list-box .list0 h3 a{
+	display: inline-block;
+	font-size: 16px;
+}
+.list-box .list0 h3{
+	display: block;
+	overflow: hidden;
+}
+.list-box .list0 h3 span{
+	float: right;
+}
+/*首页*/
+.nav{
+	width: 100%;
+	position: relative;
+}
+/*清除浮动*/
+.nav:after{
+	content: "";
+	clear: both;
+}
+.nav .index-first{
+	font-family: "宋体";
+	color: #fff;
+	line-height: 39px;
+	margin-left: 65px;
+	margin-right: 38px;
+	position: absolute;
+	left: 20%;
+	top: 0;
+}
+/*导航*/
+.nav .index-first a{
+	color: #fff;
+	font-size: 14px;
+}
+.nav-wrap .main-nav{
+	position: absolute;
+	left: 30%;
+
+}
+.main-nav li{
+	line-height: 40px;
+	
+	float: left;
+	text-align: center;
+}
+.main-nav li a{
+	display: inline-block;
+	width: 136px;
+	height: 100%;
+	color:#fff;
+	font-size: 14px;
+}
+.main-nav li:hover{
+	background-color: #f3f3f3;
+}
+.main-nav li:hover a{
+	color: #c1121d;
+}
+/*马拉松*/
+.nav-wrap .horse-run{
+	width: 150px;
+	height: 39px;
+	position: absolute;
+	right: 2%;
+	top: 0;
+}
+.nav-wrap:after{
+	content: "";
+	clear: both;
+}

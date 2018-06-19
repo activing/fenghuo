@@ -1,0 +1,174 @@
+.x-regist{
+	width: 100%;
+	height: 560px;
+	padding-top: 45px;
+	background-color: #F4F4F4;
+}
+.content{
+	width: 930px;
+	height: 480px;
+	margin: 0 auto;
+	background-color: white;
+	border:1px solid #DBDBDB;
+}
+/*欢迎注册*/
+.content >span{
+	display: inline-block;
+	margin: 37px 0 0 34px;
+	border-left: 5px solid #c01a20;
+	padding-left: 9px;
+}
+.content >span p{
+	font-size: 18px;
+}
+/*左边 input*/
+.content-left{
+	width: 518px;
+	border-right:1px solid #DBDBDB;
+	margin-top: 20px;
+	position: absolute;
+}
+.content-left span{
+	color: red;
+}
+.content-left >div{
+	width: 456px;
+	height: 37px;	
+	margin-left: 35px;
+	margin-top: 10px;
+}
+.content-left input{
+	height: 34px;
+	border: 1px solid #DCDCDC;
+}
+label{
+	font-size: 14px;
+    font-family: "微软雅黑";
+    width: 80px;
+    float: left;
+    text-align: right;
+    margin-top: 6px;
+}
+.phone input{
+	width: 180px;
+	line-height: 37px;
+	background:url(../images/shouji.png) no-repeat;
+	background-position: 10px;
+	padding-left: 30px;
+}
+.code{
+	overflow: hidden;
+	position: relative;
+}
+.code .yzm .icon_change{
+	float:right;
+	margin:5px 20px 0 0; 
+}
+.code .yzm{
+	width: 120px;
+	height: 30px;
+	position: absolute;
+	top: 3px;
+	right: 70px;
+}
+#adressError{
+	position: absolute;
+	left: 430px;
+	top: 112px;
+	color: red;
+}
+.adress input,.password input,.Apassword input{
+	width: 275px;
+	padding-left: 30px;
+	line-height: 37px;
+}
+.adress input{
+	background: url(../images/email.png) no-repeat;
+	background-position: 5px;
+}
+.password input,.Apassword input{
+	background:url(../images/pwd.png) no-repeat;
+	background-position: 8px;
+}
+.Apassword,.phone{
+	position: relative;
+}
+.phone #utelError{
+	position: absolute;
+	left: 305px;
+	top: 7px;
+	color: red;
+}
+.Apassword #pwdError{
+	position: absolute;
+	left: 395px;
+	top: 7px;
+}
+/*清除浮动*/
+.checkbox:after{
+	content: "";
+	clear: both;
+}
+.checkbox input{
+	float: left;
+	border:1px solid #e2e2e2;
+	margin-left: 90px;
+}
+.agree p{
+	display: inline-block;
+	margin-top: 6px;
+}
+input[name="button"]{
+		opacity: 0.6;
+}
+input[name="button"],input[name="btndl"]{
+	border:none;
+	cursor: pointer;
+	border-radius: 5px;
+	background-color: #C01A20;
+	outline: none;
+}
+.content-left input.true{
+	width: 305px;
+	height: 46px;
+	margin-left:130px;
+	font-size: 20px;
+	color: white;
+}
+/*右边*/
+.content-rihgt{
+	width: 350px;
+	height: 200px;
+	float: right;
+	margin-top: 185px;
+	position: relative;
+}
+.content-rihgt p{
+	font-size: 14px;
+}
+.content-rihgt .btndl{
+	width: 145px;
+	height: 34px;
+	margin-top: 20px;
+	color: white;
+	font-size: 18px;
+}
+.p{
+	margin:50px 0 0 0px;
+}
+.content-rihgt ul{
+	overflow: hidden;
+}
+.content-rihgt ul li{
+	float: left;
+	width: 70px;
+	height: 20px;
+	position: relative;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.content-rihgt ul li p{
+	position: absolute;
+	left: 20px;
+	top: 0;
+}

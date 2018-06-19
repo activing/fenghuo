@@ -1,0 +1,73 @@
+-- ′′?¨êy?Y?a
+create database shopping;
+-- 1üàí?±±í
+create table admin(
+	uname varchar(16) not null primary key,
+	upwd varchar(16) not null
+)default charset=utf8;
+
+-- ′′?¨ó??§D??￠±í
+create table user_info(
+	user_id  int(10) primary key auto_increment,
+	user_tel varchar(16)  unique,
+	user_email varchar(64),
+	user_pwd varchar(32)
+)default charset=utf8;
+
+-- éì?·±í
+create table shop(
+	sid int(10) primary key auto_increment,
+	snew char(8),
+	savatar varchar(128),
+	sname varchar(32),
+	stitle varchar(128),
+	sprice decimal(10,2),
+	snum char(8),
+	sadress varchar(128)
+)default charset=utf8;
+-- 插入数据
+insert into shop (snew,savatar,sname,stitle,sprice,snum,sadress) values 
+	('新品','../image/01.jpg','都市休闲鞋01','烽火','99.00',100,'广州'),
+	('新品','../image/02.jpg','都市休闲鞋02','烽火','99.00',100,'广州'),
+	('新品','../image/03.jpg','都市休闲鞋03','烽火','99.00',100,'广州'),
+	('新品','../image/04.jpg','都市休闲鞋04','烽火','99.00',100,'广州'),
+	('新品','../image/05.jpg','都市休闲鞋05','烽火','99.00',100,'广州'),
+	('新品','../image/06.jpg','都市休闲鞋06','烽火','99.00',100,'广州'),
+	('新品','../image/07.jpg','都市休闲鞋07','烽火','99.00',100,'广州'),
+	('新品','../image/08.jpg','都市休闲鞋08','烽火','99.00',100,'广州');
+	insert into shop (snew,savatar,sname,stitle,sprice,snum,sadress) values 
+	('','../image/09.jpg','都市休闲鞋09','烽火','199.00',100,'广州'),
+	('','../image/10.jpg','都市休闲鞋10','烽火','169.00',100,'广州'),
+	('','../image/11.jpg','都市休闲鞋11','烽火','149.00',100,'广州'),
+	('','../image/12.jpg','都市休闲鞋12','烽火','69.00',100,'广州'),
+	('','../image/13.jpg','都市休闲鞋13','烽火','89.00',100,'广州'),
+	('','../image/14.jpg','都市休闲鞋14','烽火','99.00',100,'广州'),
+	('','../image/15.jpg','都市休闲鞋15','烽火','129.00',100,'广州'),
+	('','../image/16.jpg','都市休闲鞋16','烽火','129.00',100,'广州'),
+	('','../image/17.jpg','春季休闲鞋17','烽火','199.00',100,'广州'),
+	('','../image/18.jpg','春季休闲鞋18','烽火','169.00',100,'广州'),
+	('','../image/19.jpg','春季休闲鞋19','烽火','149.00',100,'广州'),
+	('','../image/20.jpg','春季休闲鞋20','烽火','69.00',100,'广州'),
+	('','../image/21.jpg','春季休闲鞋21','烽火','89.00',100,'广州'),
+	('','../image/22.jpg','春季休闲鞋22','烽火','99.00',100,'广州'),
+	('','../image/23.jpg','春季休闲鞋23','烽火','129.00',100,'广州'),
+	('','../image/24.jpg','春季休闲鞋24','烽火','129.00',100,'广州');
+-- 1o??3μ±í
+create table shopCar(
+	cid int(10) primary key auto_increment,
+	cname 
+	cprice
+	cnum
+);
+
+-- ó??§??μ￥±í
+create table order(
+	cid 
+	user_id
+	user_tel
+	sname
+	sprice
+	snum
+	pay_time
+	
+);

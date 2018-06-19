@@ -1,0 +1,144 @@
+.container{
+	width: 960px;
+	height: 550px;
+	margin: 50px auto;
+	box-shadow: 0 0 5px 20px #eee;
+	position: relative;
+}
+.mian{
+	width: 960px;
+	height: 500px;
+}
+.mymain{
+	width: 60px;
+	height: 20px;
+	position: absolute;
+	top: 40px;
+	right: 15px;
+}
+.head{
+	height: 100px;
+	padding-left:15px;
+	background-color:#ccc;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+.head input{
+	position: absolute;
+	right: 100px;
+	top: 40px;
+}
+.head .Head{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	overflow: hidden;
+	border:1px solid white;
+	box-shadow: 0 0 1px 1px green;
+}
+.head .Head>img{
+	width: 100%;
+	
+}
+/********************更换头像*******************/
+.mian>.update_photo{
+	width: 80px;
+	border:1px solid red;
+	overflow: hidden;
+	padding: 10px 0 10px 10px;
+	background-color:rgba(0,0,0,0.3);
+	z-index: 100;
+	position: absolute;
+	top: 10px;
+	left: 100px;
+	display: none;
+}
+.update_photo .photomask{
+	display: block;
+	width: 70px;
+	height: 20px;
+	background-color:#eee;
+	text-align: center;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+.update_photo input{
+	cursor: pointer;
+}
+.update_photo input[type=file]{
+	opacity: 0;
+}
+.update_photo input[type=button]{
+	border:none;
+	margin-top:5px;
+	width: 70px;
+	height: 20px;
+}
+
+
+.head div{
+	float: left;
+}
+.H-right{
+	margin-left: 10px;
+	height: 60px;
+	margin-top: 20px;
+}
+.H-right h1{
+	padding-right: 7px;
+}
+.center{
+	height: 400px;
+	background-color:white;
+	position: relative;
+}
+.center .nav{
+	padding-left:15px;
+	height: 35px;
+	line-height: 35px;
+}
+.center .nav:after{
+	content: "";
+	clear: both;
+}
+.center .nav li{
+	float: left;
+	margin-right: 20px;
+}
+.center .nav li a{
+	color: #333;
+}
+.center .nav li:hover a{
+	color:orange;
+}
+.center .mange,.center .person{
+	height: 350px;
+	margin-top: 15px;
+}
+.mange table{
+	padding-left: 15px;
+	width: 550px;
+	height: 200px;
+}
+.mange table thead{
+	border-bottom:1px solid #ccc;
+}
+.mange table span{
+	color: #aaa;
+	padding-left: 15px;
+}
+.person{
+	background-color: white;
+	position: absolute;
+	left: 0;
+	top: 20px;
+	z-index: 2;
+	display: none;
+}
+.person table{
+	padding-left: 15px;
+	width: 550px;
+	height: 200px;
+}

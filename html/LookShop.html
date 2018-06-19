@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/head.css">
+	<link rel="stylesheet" href="../css/nav.css">
+	<link rel="stylesheet" href="../css/shop.css">
+	<link rel="stylesheet" href="../css/window.css">
+	<link rel="stylesheet" href="../css/footer.css">
+	<title>游览商品</title>
+</head>
+<body onload="getShop()">
+	<div id="head"></div>
+	<!-- <div id="Shop"></div> -->
+	<div class="sh-main">
+	<div class="sh-head">
+		<ul class="sh-nav">
+			<li><a href="javascript:;" class="active">默认</a></li>
+			<li><a href="javascript:;">新品</a></li>
+			<li>
+				<a href="javascript:;" class="last">价格</a>				
+			</li>
+		</ul>
+		<div class="list-right" id="listRight">
+			<span><b>共有xx件商品</b></span>
+			<a href="" class="sh-pre"></a>
+			<span>1/xx</span>
+			<a href="" class="sh-next"></a>
+		</div>
+	</div>
+	<div class="x-wrap sh-section" id='section'>
+		<!-- 动态生成数据 -->
+	</div>
+</div>
+	<div id="window"></div>
+	<div id="footer"></div>
+</body>
+<script type="text/javascript" src="../jq/jquery.js"></script>
+<script type="text/javascript" src="../js/head.js"></script>
+<script type="text/javascript" src="../js/shop.js"></script>
+<script type="text/javascript" src="../js/window.js"></script>
+<script type="text/javascript" src="../js/foot.js"></script>
+</html>

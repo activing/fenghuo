@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/head.css">
+	<link rel="stylesheet" href="../css/nav.css">
+	<link rel="stylesheet" href="../css/regist.css">
+	<link rel="stylesheet" href="../css/window.css">
+	<link rel="stylesheet" href="../css/footer.css">
+	<title>注册页面</title>
+</head>
+<body>
+	<div id="head"></div>
+	<div class="x-regist">
+		<div class="content">
+			<span><p>欢迎注册</p></span>
+			<div class="content-left">
+				<div class="phone">
+					<label><span>*</span>手机：</label>
+					<input type="text" id="utel" class="" maxlength="11" size="11" placeholder="输入常用手机号" autocomplete="off">
+					<div id="utelError"></div>
+				</div>
+				<div class="code">
+					<label><span>*</span>验证码：</label>
+					<input type="text" id="ucode" name="ucode" class="" placeholder="输入图形验证码"
+					style="text-indent:5px;" axlength="4">
+					<span class="error-span"></span>
+					<div class="yzm">
+						<img src="../php/code.php" alt="" id="img">
+						<div class="icon_change" id="icon_change"><img src="../images/icon_change.png" alt="" width="25px" height="20px" >
+						</div>
+					</div>
+				</div>
+				<div class="adress">
+					<label><span>*</span>邮箱地址：</label>
+					<input type="email" id="uadress" class="" placeholder="请填写常用的邮箱地址">
+					<div id="adressError"></div>
+				</div>
+				<div class="password">
+					<label><span>*</span>设置密码：</label>
+					<input type="password" id="upwd" class="" maxlength="20" size="20"  placeholder="6-20字符组成，建议用字母和数字">
+				</div>
+				<div class="Apassword">
+					<label><span>*</span>确定密码：</label>
+					<input type="password" id="uApwd" class="" placeholder="请再次输入密码">
+					<div id="pwdError"></div>
+				</div>
+				<div class="agree">
+					<div class="checkbox">
+						<input type="checkbox" id="checkbox">
+					</div>
+					<p>我已阅读并同意</p>
+					<span>《烽火服务条款》</span>
+				</div>
+				<!-- <button class="true">立即注册</button> -->
+				<input type="button" value="立即注册" name="button" class="true" id="reg" disabled="true">
+				<span id="reg_error"></span>
+			</div>
+			<div class="content-rihgt">
+				<p>已经有烽火账号?</p>
+				<!-- <button><p>立即登录</p></button> -->
+				<a href="Loginer.html"><input type="button" value="立即登录" name="btndl" class="btndl"></a>
+				<p class="p">你也可以使用下列账号登录：</p>
+				<ul>
+					<li>
+						<a href=""><img src="../images/QQ.png" alt=""></a>
+						<p>QQ</p>
+					</li>
+					<li>
+						<a href=""><img src="../images/Wechat.png" alt=""></a>
+						<p>微信</p>
+					</li>
+					<li>
+						<a href=""><img src="../images/zhifubao.png" alt=""></a>
+						<p>支付宝</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="window"></div>
+	<div id="footer"></div>
+</body>
+<script type="text/javascript" src="../jq/jquery.js"></script>
+<script type="text/javascript" src="../js/head.js"></script>
+<script type="text/javascript" src="../js/regist.js"></script>
+<script type="text/javascript" src="../js/window.js"></script>
+<script type="text/javascript" src="../js/foot.js"></script>
+</html>

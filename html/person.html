@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/person.css">
+	<title>我的个人中心</title>
+</head>
+<body>
+<div class="container">
+	<div class="mian" id="main">
+		<div class="mymain"><a href="index.html">返回主页</a></div>
+		<div class="head" id="head">
+			<input type="button" value="更改" id="update">
+			<div class="Head"><img src='../upload/01.jpg'></div>
+			<div class="H-right">
+				<h1>未设置</h1>
+				<h3>Do you need a reason to love someone?</h3>
+			</div>
+		</div>
+		
+		<!-- 更换头像 -->
+		<div class="update_photo">
+			<form action="../php/load.php" method="post"
+			 enctype="multipart/form-data" id="form">
+			<span class="photomask">跟换头像</span>
+			 <input type="file" name="mypic" id="uphoto"/>
+			<input type="button" value="确定更换" data-update="uphoto"/>
+			</form>
+		</div>
+
+		<div class="center">
+			<ul class="nav">
+				<li class="zhuanghu"><a href="">帐户管理</a></li>
+				<li class="geren"><a href="">个人资料</a></li>
+				<li><a href="">账户充值</a></li>
+			</ul>
+			<!-- 账户管理 -->
+			<div class="mange" id="mange">
+				<table>
+					<thead>
+						<tr><th align="left">账户安全</th><th align="left" colspan="2">安全等级：100</th></tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>密码</td>
+						</tr>
+						<tr>
+							<td>邮箱</td>
+							<td>xxx@qq.com<span>(已验证，可通过邮箱找回密码)</span></td>
+						</tr>
+						<tr>
+							<td>手机</td>
+							<td>135xxxx2254<span>(已验证，可通过手机找回密码)</span></td>
+						</tr>
+						<tr>
+							<td>密保</td>
+							<td>xxx@qq.com<span>(设置，可通过密保问题找回密码)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- 个人资料 -->
+			<div class="person" id="person">
+				<table>
+					<tr>
+						<td>性别</td>
+						<td>未设置</td>
+					</tr>
+					<tr>
+						<td>会员等级</td>
+						<td>100</td>
+					</tr>
+					<tr>
+						<td>昵称</td>
+						<td>未设置</td>
+					</tr>
+					<tr>
+						<td>个性签名</td>
+						<td>Do you need a reason to love someone?</td>
+					</tr>
+					<tr>
+						<td>收货地址</td>
+						<td>未设置</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+	<script src="../jq/jquery.js"></script>
+	<script src="../js/myperson.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("ul .geren").hover(function(){
+			$(".person").css("display","block");
+		});
+		$("ul .zhuanghu").hover(function(){
+			$(".person").css("display","none");
+		});
+	})
+	</script>
+</body>
+</html>

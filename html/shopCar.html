@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/shopCar.css">
+	<link rel="stylesheet" href="../css/footer.css">
+	<title>购物车</title>
+</head>
+<body onload="shcar()">
+	<div class="shopcar">
+		<div class="xwrap">
+			<div class="h-left">
+				<span>您好，欢迎光临烽火官方商城</span>
+				<a href="Loginer.html">登录</a>
+				<a href="Register.html">注册</a>
+			</div>
+			<dl class="h-right">
+				<dd class="myFire">
+					<h3>
+						<a href="#">
+							<b>0</b>
+							我的烽火
+							<i class="my-icon"></i>
+						</a>
+					</h3>
+					<ul>
+						<li><a href="#">待支付</a></li>
+						<li><a href="#">待收货</a></li>
+						<li><a href="#">待评价</a></li>
+						<li><a href="#">退出系统</a></li>
+					</ul>
+				</dd>
+				<dd class="">
+					<h3><a href="">品牌官网</a></h3>
+				</dd>
+				<dd class="myPhone">
+					<h3>
+						<a href="">
+							<i class="my-mobile"></i>
+							手机烽火
+							<i class="my-icon"></i>
+						</a>
+					</h3>
+					<ul>
+						<li>
+							<div class="iqr"><img src="../images/iqr.jpg"></div>
+						</li>
+					</ul>
+				</dd>
+				<dd class="shopCar">
+					<h3>
+						<a href="">
+							<i class="car"></i>
+							购物车<span>(0)</span>件
+						</a>
+					</h3>
+				</dd>
+				<dd class="exit">
+					<h3><a href="#">退出系统<div class="icon"></div></a></h3>
+				</dd>
+			</dl>
+		</div>
+		<div class="s-wrap">
+			<div class="x-wrap">
+				<div class="s-logo"><img src="../images/logo.jpg" alt="" width="200px" height="80px"></div>
+				<div class="s-right">
+					<div class="s-one s-a">1</div>
+					<div class="s-line"><div class="line2"></div></div>
+					<div class="s-two s-a">ok</div>
+					<span>我的购物车</span>
+					<p>成功提交账单</p>
+				</div>
+			</div>
+		</div>
+		<!-- 主体内容 -->
+		<div class="section">
+			<div class="x-wrap table" id="table">
+				<ul class="table-nav">
+					<li><div class="tongyong bianhao"><p>商品编号</p></div></li>
+					<li><div class="tongyong mingc"><p>商品名称</p></div></li>
+					<li><div class="tongyong jiag"><p>商品价格(元)</p></div></li>
+					<li><div class="tongyong shul"><p>商品数量(件)</p></div></li>
+					<li><div class="tongyong caozuo"><p>相关操作</p></div></li>
+				</ul>
+				<table>
+					<tbody id="mainShop">
+						<tr align="center">
+						</tr>
+					</tbody>
+					<tfoot id="mainPrice" style="float:right">
+						<!-- <tr>
+							<td colspan="5">共有x件商品，需要支付x元</td>
+						</tr> -->
+					</tfoot>
+				</table>
+				<div class="result">
+					<input type="button" value="结算" data-car="account">
+					<a href="Lookshop.html">返回商城</a>
+				</div>
+			</div>
+		</div>
+		<!-- 结算窗口 -->
+		<div id="account" class="account">
+			<div class="account-window">
+				<div class="account-head">
+					提示
+				</div>
+				<div class="content">
+				恭喜用户，购买xx件商品成功，共支付xx元,欢迎下次光临！
+				</div>
+				<div id="account-close">关闭</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer"></div>
+	<script src="../jq/jquery.js"></script>
+	<script src="../js/head.js"></script>
+	<script src="../js/shopcar.js"></script>
+	<script src="../js/foot.js"></script>
+</body>
+</html>

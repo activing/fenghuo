@@ -1,0 +1,262 @@
+/*右边出来.hide-right*/
+.show-right,.hide-right{
+	width: 38px;
+	height: 100%;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 100;
+}
+.show-right:hover .hide-right{
+	transform: translateX(0px);
+}
+.hide-right{
+	background-color:#272727;
+	transition: all 0.5s;
+	transform: translateX(38px);
+}
+.all-right{
+	width: 38px;
+	height: 340px;
+	position: fixed;
+	right: 0px;
+	top: 200px;
+	background-color:#272727;
+	display: block;
+	z-index: 100;
+}
+.all-right span{
+	margin-top: 20px;
+	display: block;
+	position: relative;
+}
+/*我的烽火和返回顶部弹出框*/
+.all-right .right-logo{
+	height: 30px;
+	width: 100%;
+}
+.right-logo .comDiv,.right-head .comHead{
+	width: 70px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	font-size: 14px;
+	color: #6C6C6C;
+	background-color:#F2F2F2;
+	opacity: 0.8;
+	border: 1px solid #ddd;
+	position: absolute;
+	left: -72px;
+	top: 0px;
+	display: none;
+}
+.right-logo .r-logo:hover .comDiv,.right-head .r-head:hover .comHead{
+	display: block;
+}
+.right-logo .r-logo:hover em,.r-head:hover em,.r-hide:hover em{
+	display: block;
+}
+.all-right .right-service{
+	height: 101px;
+}
+.all-right .right-service a span{
+	width: 20px;
+	display: block;
+	line-height: 18px;
+	margin: 0 auto 3px;
+	text-align: center;
+	color: white;
+	font-size: 14px;
+}
+/*小图标*/
+.all-right i{
+	display: block;
+	width: 100%;
+	height: 28px;
+	background: url(../images/index-nav.png) no-repeat;
+}
+.all-right em{
+	display: none;
+	position: absolute;
+	width: 10px;
+	height: 20px;
+	background: url(../images/index-nav.png) no-repeat;
+	background-position: 0px -233px;
+}
+.all-right .right-logo a.rig-logo i{
+	background-position: 2px 0;
+}
+.all-right .right-service a.rig-service i{
+	background-position: 3px -89px;
+}
+
+.all-right .right-hide a.rig-hide i{
+	background-position: 3px -124px;
+}
+.all-right .right-two a.rig-two i{
+	background-position: 3px -163px;
+}
+.all-right .right-head a.rig-head i{
+	background-position: 3px -203px;
+}
+.all-right .right-head a.rig-head{
+	display: none;
+}
+.all-right  a{
+	height: 30px;
+	padding: 3px 0;
+	display: block;
+}
+/*咨询框*/
+.right-service>.right-discuss{
+	position: absolute;
+	right:38px;
+	top: -150px;
+	width: 396px;
+	height: 500px;
+	border:1px solid #aaa;
+	display: none;
+}
+.right-discuss>.dis-head{
+	position: relative;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background-color:#AD040B;
+	text-align: center;
+	cursor: move;
+}
+.right-discuss>.dis-head{
+	font-size: 16px;
+	color: #fff;
+}
+.right-discuss>.dis-head a{
+	display: block;
+	font-size: 20px;
+	position: absolute;
+	top: 0;
+	right: 10px;
+	color: #fff;
+}
+.right-discuss>.dis-center{
+	width: 100%;
+	height: 300px;
+	background-color: #fff;
+	/*border-bottom: 1px solid #ccc;*/
+}
+.right-discuss>.dis-center>#con-content ul{
+	float: left;
+}
+.right-discuss>.dis-center>#con-content li{
+	float: left;
+}
+.right-discuss>.dis-center>#con-content li:nth-child(2){
+	margin-right: 20px;
+}
+.right-discuss>.dis-mask{
+	width: 100%;
+	height: 35px;
+	background-color: #fff;
+}
+.right-discuss>.dis-mask>img{
+	width:100%;
+	height: 100%;
+}
+.right-discuss>.dis-bottom{
+	width: 100%;
+	height: 118px;
+	background-color: #fff;
+}
+.right-discuss>.dis-bottom input{
+	border:none;
+	padding:5px 10px;
+	margin-left: 10px;
+}
+.right-discuss>.dis-bottom textarea{
+	color:#333;
+}
+/*我的收藏*/
+.right-hide .myHide{
+	width: 270px;
+	height: 500px;
+	background-color:#F2F2F2;
+	border: 1px solid #ccc;
+	opacity: 0.8;
+	position: absolute;
+	left: -272px;
+	top: -300px;
+	overflow: hidden;
+	display: none;
+}
+button{
+	border: none;
+}
+.myHide button{
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #A3CED7;
+	font-size: 20px;
+	text-align:center;
+	float: right;
+}
+.myHide .mh-head{
+	height: 30px;
+	width: 240px;
+	line-height: 30px;
+	background-color: #A3CED7;
+	position: relative;
+}
+.myHide .mh-head p{
+	margin-left: 5px;
+}
+.myHide .mh-head a{
+	position: absolute;
+	right: 0px;
+	top: 28px;
+}
+/*二维码弹出 一个动画效果*/
+.rig-two .two-code{
+	width: 150px;
+	height: 200px;
+	background-color: white;
+	position: absolute;
+	right: 88px;
+	top: -30px;
+	animation: code 1s .2s ease both;
+	display: none;
+}
+.rig-two:hover .two-code{
+	display: block;
+}
+@keyframes code{
+	0%{
+		left:0%;
+		opacity: 0;
+	}
+	50%{
+		left:-200%;
+		opacity: 0.5;
+	}
+	100%{
+		left: -400%;
+		opacity: 0.8;
+	}
+}
+.two-code .code{
+	width: 100%;
+	height: 100%;
+	background: url(../images/index.png) no-repeat;
+	background-size: 80% 70%;
+	margin: 10px 0 0 16px;
+}
+.two-code .codeApp{
+	width:80%;
+	height: 30px;
+	color: white;
+	background-color: red;
+	border-radius: 15px;
+	position: absolute;
+	bottom: 10px;
+	left: 16px;
+}

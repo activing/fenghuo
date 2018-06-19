@@ -1,0 +1,289 @@
+.shopcar{
+	width: 100%;
+	background-color: #F2F2F2;
+	position: relative;
+}
+.xwrap{
+	width: 1200px;
+	height: 35px;
+	line-height: 35px;
+	margin:0 auto;
+	position: relative;
+}
+.h-left{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.h-left a{
+	color:#C1121D;
+	margin-left: 10px;
+}
+.h-left span{color: #6c6c6c;}
+.h-right{
+	position: relative;
+	margin-right: 10px;
+}
+.h-right dd{
+	float: left;	
+}
+dl{
+	float: right;
+}
+/*清除浮动*/
+.h-right:after{
+	content: "";
+	height: 0;
+	width: 0;
+	display: block;
+	position: absolute;
+	clear:both;
+	zoom:1;
+}
+dl:after{
+	content: "";
+	clear:both;
+}
+.h-right dd h3 a{
+	color: #6c6c6c;
+	display: inline-block;
+	height: 15px;
+	line-height: 15px;
+	padding: 9px 15px;
+}
+.h-right dd h3 a:hover{
+	color:#C1121D;
+	background-color:#EDEEF0;
+}
+.myFire ul{
+	width: 102px;
+	z-index: 2;
+	background-color:white;
+	box-shadow: 1px 0px 1px rgba(0, 0, 0, .1);
+	display: none;
+	position: absolute;
+	z-index: 2;
+}
+.myFire ul li{
+	text-align: center;
+}
+.myFire ul li a{
+	color: #6c6c6c;
+}
+.myFire ul li:hover a{
+	color: #C1121D;
+}
+.myFire h3 a b{
+	background:url(../images/list.png) no-repeat;
+	background-size: auto auto;
+	color: #fff;
+	text-align: center;
+	font-size: 10px;
+	width: 15px;
+	height: 15px;
+	line-height: 15px;
+	position: absolute;
+	left: 0px;
+	display: block;
+}
+.shopCar span{
+	color:#C1121D;
+}
+/*最右顶部图标*/
+.h-right dd h3 a i{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	overflow: hidden;
+	vertical-align: middle;
+	background:url(../images/cart-icon.png) no-repeat;
+} 
+.h-right dd h3 a .my-icon{
+	background-position: -244px -577px;
+	position: relative;
+	left: 0;
+	top: -1px;
+}
+.h-right dd h3 a:hover .my-icon{
+	background-position: -224px -577px;
+}
+.h-right dd h3 a .my-mobile{
+	background-position: -244px -603px;
+	position: relative;
+	left: 6px;
+	top: -2px;
+}
+.h-right dd h3 a .car{
+	background-position: -244px -637px;
+	position: relative;
+	left: 5px;
+	top: 0px;
+}
+.myPhone ul{
+	width: 111px;
+	height: 160px;
+	box-shadow: 1px 0px 1px rgba(0, 0, 0, .1);
+	position: absolute;
+	display: none;
+	z-index: 2;
+}
+/*logo*/
+.s-wrap{
+	width: 100%;
+	height: 100px;
+	background-color: white;
+	position: relative;
+}
+.s-logo{
+	width: 200px;
+	height: 80px;
+	margin-left: 100px;
+	padding-top: 10px;
+}
+.s-right{
+	width: 250px;
+	height: 50px;
+	padding:0 25px 0 25px;
+	position: absolute;
+	top: 20px;
+	right: 110px;
+	float: right;
+}
+.s-right:after{
+	content: "";
+	clear:both;
+}
+.s-one{
+	float: left;
+	background-color:#C1181F;
+}
+.s-two{
+	float: right;
+	margin-top: -15px;
+	background-color: #E5E5E5;
+}
+.s-a{
+	width: 26px;
+	height: 26px;
+	border-radius: 13px;
+	line-height: 26px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+}
+.s-right  p{
+	position: absolute;
+	right: 0;
+	top: 30px;
+}
+.s-right  span{
+	position: absolute;
+	left: 5px;
+	top: 30px;
+}
+.s-line{
+	width: 180px;
+	height: 2px;
+	margin: 13px 0 0 35px;
+	background-color: #E5E5E5;
+	border-radius: 2px;
+}
+.s-line .line2{
+    width: 50%;
+    height: 2px;
+	background-color:#C1181F;
+}
+/*主体内容，存放购物信息*/
+.section{
+	height: 500px;
+	background-color: #F2F2F2;
+}
+/*表单物品*/
+.section .table{	
+	height: 400px;
+	margin: 0 auto;
+	border:2px solid #ccc;
+}
+.table-nav{
+	overflow: hidden;
+	background: linear-gradient(top,#ccc,#eee,#ccc);
+	background: -webkit-linear-gradient(top,#ccc,#eee,#ccc);
+	background: -moz-linear-gradient(top,#ccc,#eee,#ccc);
+}
+.table .table-nav li{
+	width: 240px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	float: left;
+	position: relative;
+}
+.tongyong{
+	width: 230px;
+	height: 30px;
+	
+	position: absolute;
+	left:5px;
+	top:5px;
+}
+.table .table-nav li:hover .tongyong{
+		/*background: -webkit-linear-gradient(top,#eee,green,#eee);*/
+		background-color: white;
+		cursor: pointer;
+}
+.tongyong p{
+	margin-top: -5px;
+}
+table{
+	width: 1200px;
+}
+.result{
+	float: right;
+}
+.result input{
+	background-color: #C1181F;
+	border:0;
+	width: 50px;
+	height: 25px;
+	color: white;
+	cursor: pointer;
+}
+/*购买成功窗口*/
+.account{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.account>.account-window{
+	width: 400px;
+	height: 100px;
+	background-color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -200px;
+	margin-top: -50px;
+}
+.account>.account-window>.account-head{
+	height: 25px;
+	width: 100%;
+	line-height: 25px;
+	text-indent: 10px;
+	background-color: #eee;
+}
+.account>.account-window>div{
+	text-indent: 10px;
+	position: relative;
+}
+#account-close{
+	position: absolute;
+	top: 70px;
+	right: 40px;
+	padding-right: 10px;
+	background-color: #aaa;
+	cursor: pointer;
+}
